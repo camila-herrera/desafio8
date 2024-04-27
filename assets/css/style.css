@@ -1,0 +1,95 @@
+.narbar{
+    grid-area: narbar;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25527B;
+    color: white;
+    border: 1px black;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    gap: 30px;
+
+}
+.narbar i{
+    color: white;
+    display: flex;
+    justify-content: end;
+}
+.narbar i:hover{
+    color: gray;
+}
+.aside-bar{
+    grid-area: aside-bar;
+    background-color: #E7E7E7;
+    color: #3a3c3d;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    margin-left: 10px;
+}
+.categorias h4:hover{
+    background-color: white;
+    color: black;
+}
+.section{
+    grid-area: section;
+    background-color: #E7E7E7;
+    display: grid;
+    grid-template-columns:  auto auto auto;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    gap: 10px;
+    column-gap: 10px;
+}
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 1%;
+    width: 250px;
+    height: 350px;
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5%;
+    size-adjust: cover;
+}
+.card button{
+    border: none;
+    background-color: #25527B;
+    color: white;
+    width: 100%;
+    height: 35px;
+    align-items: last baseline;
+}
+.card button:hover{
+    background-color: gray;
+}  
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #25527B;
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+.cuerpo{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 10% auto 8%;
+    grid-template-areas: 
+    "narbar narbar"
+    "aside-bar section"
+    "footer footer"
+}
